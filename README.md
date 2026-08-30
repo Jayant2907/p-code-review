@@ -1,6 +1,8 @@
 # p-code-review
 
-An agent skill for a **whole-codebase audit** (no diff). It orchestrates three independent review channels in parallel, aggregates them into one verdict, and writes a report.
+> **Agent Harness** — a whole-codebase review harness for Cursor and Claude Code.
+
+A **codebase review harness** for whole-repo audits (no diff). It orchestrates three independent review channels in parallel, aggregates them into one verdict, and writes a report.
 
 Compatible with **Claude Code** and **Cursor**. For Claude Code, the three files in `agents/` must also be installed as custom sub-agents.
 
@@ -118,3 +120,16 @@ p-code-review/
     ├── p-code-review-security.md
     └── p-code-review-reuse.md
 ```
+
+## Agent Harness collection
+
+Part of the **Agent Harness** suite by [@Jayant2907](https://github.com/Jayant2907) — installable skills that wrap structured agent workflows (review harnesses, QA harnesses, impact sweeps) for Cursor and Claude Code.
+
+| Harness | Role |
+|---|---|
+| [adversarial-review](https://github.com/Jayant2907/adversarial-review) | Merge-review harness |
+| [p-code-review](https://github.com/Jayant2907/p-code-review) | Whole-codebase review harness (this repo) |
+| [feature-impact-sweep](https://github.com/Jayant2907/feature-impact-sweep) | Cross-cutting impact harness |
+| [j-QA](https://github.com/Jayant2907/j-QA) | Manual UI QA harness |
+| [j-user-readiness](https://github.com/Jayant2907/j-user-readiness) | Visual demo-readiness harness |
+| [j-module-audit](https://github.com/Jayant2907/j-module-audit) | Field-level module audit harness |
